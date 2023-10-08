@@ -1,12 +1,13 @@
 import pytest
-from selenium import webdriver
 
 
-@pytest.mark.usefixtures('test_apple')
+@pytest.mark.usefixtures('test_fixture1')
 def test_google():
-        driver = webdriver.Chrome()
-        driver.get('https://www.google.com/')
+        pass
+
 @pytest.mark.p
 def test_facebook():
-    driver = webdriver.Chrome()
-    driver.get('https://www.facebook.com/')
+        pass
+@pytest.mark.usefixtures('test_fixture1')
+def test_apple():
+        pass
